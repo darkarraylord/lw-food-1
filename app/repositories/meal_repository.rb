@@ -21,7 +21,7 @@ class MealRepository
   def find(id)
     @meals.find do |meal|
       meal.id == id
-    end    
+    end
   end
 
   def all
@@ -58,8 +58,3 @@ class MealRepository
     end
   end
 end
-
-repo = MealRepository.new('data/meals2.csv')
-p repo
-
-
